@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Showcase - Visvajeet Raj</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fvisvajeet5112back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Animated Background Particles -->
+    <div class="particle-bg">
+        <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="particleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3"/>
+                    <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:0.1"/>
+                </linearGradient>
+            </defs>
+            <circle cx="10%" cy="20%" r="2" fill="url(#particleGradient)" class="animate-float">
+                <animate attributeName="cy" values="20%;15%;20%" dur="4s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="80%" cy="30%" r="3" fill="url(#particleGradient)" class="animate-float animation-delay-200">
+                <animate attributeName="cx" values="80%;85%;80%" dur="6s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="30%" cy="70%" r="1.5" fill="url(#particleGradient)" class="animate-float animation-delay-400">
+                <animate attributeName="cy" values="70%;65%;70%" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="90%" cy="80%" r="2.5" fill="url(#particleGradient)" class="animate-float animation-delay-300">
+                <animate attributeName="cx" values="90%;95%;90%" dur="7s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="20%" cy="90%" r="2" fill="url(#particleGradient)" class="animate-float animation-delay-500">
+                <animate attributeName="cy" values="90%;85%;90%" dur="4.5s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar" class="morphing-nav px-4 py-4 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">VR</span>
+                </div>
+                <span class="font-bold text-lg gradient-text">Visvajeet</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="portfolio_homepage.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Home</a>
+                <a href="portfolio_homepage.html#about" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">About</a>
+                <a href="portfolio_homepage.html#projects" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Projects</a>
+                <a href="portfolio_homepage.html#skills" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Skills</a>
+                <a href="projects_showcase.html" class="nav-link text-primary transition-colors duration-300">Portfolio</a>
+                <a href="contact_inquiry.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Contact</a>
+            </div>
+
+            <!-- Theme Toggle -->
+            <button id="themeToggle" class="p-2 rounded-lg bg-surface hover:bg-surface-light transition-colors duration-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-surface hover:bg-surface-light transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
+            <div class="flex flex-col space-y-4">
+                <a href="portfolio_homepage.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Home</a>
+                <a href="portfolio_homepage.html#about" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">About</a>
+                <a href="portfolio_homepage.html#projects" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Projects</a>
+                <a href="portfolio_homepage.html#skills" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Skills</a>
+                <a href="projects_showcase.html" class="nav-link text-primary transition-colors duration-300">Portfolio</a>
+                <a href="contact_inquiry.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 px-4">
+        <div class="max-w-6xl mx-auto text-center section-reveal">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text animate-slide-up">
+                Project Showcase
+            </h1>
+            <p class="text-xl text-text-secondary mb-2 animate-slide-up animation-delay-200">
+                Explore My Development Journey
+            </p>
+            <p class="text-lg text-text-muted max-w-3xl mx-auto animate-slide-up animation-delay-300">
+                A comprehensive collection of full-stack applications showcasing expertise in modern web technologies, AI integration, and user-centered design solutions
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 px-4">
+        <div class="max-w-6xl mx-auto section-reveal">
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="filter-btn active" data-filter="all">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                    </svg>
+                    All Projects
+                </button>
+                <button class="filter-btn" data-filter="web-app">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
+                    </svg>
+                    Web Apps
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zM8 5a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm1 9a1 1 0 100 2h2a1 1 0 100-2H9z" clip-rule="evenodd"/>
+                    </svg>
+                    Mobile
+                </button>
+                <button class="filter-btn" data-filter="ai-ml">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    AI/ML
+                </button>
+                <button class="filter-btn" data-filter="ecommerce">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                    </svg>
+                    E-commerce
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: EcoPellet -->
+                <div class="project-card glass-card rounded-2xl overflow-hidden hover:shadow-glow-lg transition-all duration-500 hover:scale-105 section-reveal" data-category="web-app ai-ml">
+                    <div class="relative h-48 overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EcoPellet Sustainable Energy Platform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white w-full">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-sm text-accent font-medium">Sustainable Energy</span>
+                                    <div class="flex space-x-2">
+                                        <button class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200" onclick="openProjectModal('ecopellet')">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-sm opacity-90">Real-time monitoring dashboard with AI-powered analytics for sustainable energy solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">PlastiCraft</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Comprehensive machine that turns thin plastics into usable products (control micro plastics).</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Thermal Conductivity</span>
+                            <span class="px-2 py-1 bg-secondary/20 text-secondary rounded text-xs">Working</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent rounded text-xs">Networking</span>
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">AI/ML</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-muted text-xs">Full Stack Web App</span>
+                            <button class="text-accent hover:text-accent-400 text-sm font-medium transition-colors duration-200" onclick="openProjectModal('ecopellet')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: FiberX -->
+                <div class="project-card glass-card rounded-2xl overflow-hidden hover:shadow-glow-lg transition-all duration-500 hover:scale-105 section-reveal animation-delay-200" data-category="web-app ai-ml">
+                    <div class="relative h-48 overflow-hidden group">
+                        <img src="https://images.pixabay.com/photo/2020/06/24/19/12/cabbage-5337431_1280.jpg" alt="FiberX Network Management System" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white w-full">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-sm text-secondary font-medium">Fabrication</span>
+                                    <div class="flex space-x-2">
+                                        <button class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200" onclick="openProjectModal('fiberx')">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-sm opacity-90">Regenerating usable cloth/Fabrics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">FiberX</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Advanced fiber with regenerating spray that regenerates torn cloths.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Mixtures</span>
+                            <span class="px-2 py-1 bg-secondary/20 text-secondary rounded text-xs">Ethonol composition</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent rounded text-xs">Fabric Integration</span>
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">AI/ML</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-muted text-xs">All Projects</span>
+                            <button class="text-accent hover:text-accent-400 text-sm font-medium transition-colors duration-200" onclick="openProjectModal('fiberx')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Mother's Milk Tracker -->
+                <div class="project-card glass-card rounded-2xl overflow-hidden hover:shadow-glow-lg transition-all duration-500 hover:scale-105 section-reveal animation-delay-300" data-category="mobile ai-ml">
+                    <div class="relative h-48 overflow-hidden group">
+                        <img src="https://images.pexels.com/photos/1257110/pexels-photo-1257110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mother's Milk Tracker Mobile App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white w-full">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-sm text-accent font-medium">Healthcare </span>
+                                    <div class="flex space-x-2">
+                                        <button class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200" onclick="openProjectModal('milktracker')">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-sm opacity-90">Smart dress that helps mothers to feed their baby anywhere any time</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">FeedFit</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Intergrated breast milk monitoring within their dress.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Sensors</span>
+                            <span class="px-2 py-1 bg-secondary/20 text-secondary rounded text-xs">autocad</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent rounded text-xs">ML Kit</span>
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Healthcare</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-muted text-xs"> All Projects</span>
+                            <button class="text-accent hover:text-accent-400 text-sm font-medium transition-colors duration-200" onclick="openProjectModal('milktracker')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Furniture E-commerce -->
+                <div class="project-card glass-card rounded-2xl overflow-hidden hover:shadow-glow-lg transition-all duration-500 hover:scale-105 section-reveal animation-delay-400" data-category="web-app ecommerce">
+                    <div class="relative h-48 overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Furniture E-commerce Platform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white w-full">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-sm text-primary font-medium">E-commerce Platform</span>
+                                    <div class="flex space-x-2">
+                                        <button class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200" onclick="openProjectModal('furniture')">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-sm opacity-90">Modern furniture e-commerce with AR visualization and smart recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Furniture E-commerce</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Complete e-commerce solution for furniture retail with AR product visualization, intelligent search, and personalized recommendations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Next.js</span>
+                            <span class="px-2 py-1 bg-secondary/20 text-secondary rounded text-xs">Stripe</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent rounded text-xs">MySQL</span>
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">AR/VR</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-muted text-xs">E-commerce Platform</span>
+                            <button class="text-accent hover:text-accent-400 text-sm font-medium transition-colors duration-200" onclick="openProjectModal('furniture')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Job Board -->
+                <div class="project-card glass-card rounded-2xl overflow-hidden hover:shadow-glow-lg transition-all duration-500 hover:scale-105 section-reveal animation-delay-500" data-category="web-app">
+                    <div class="relative h-48 overflow-hidden group">
+                        <img src="https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Job Board Platform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white w-full">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-sm text-secondary font-medium">Job Platform</span>
+                                    <div class="flex space-x-2">
+                                        <button class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200" onclick="openProjectModal('jobboard')">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-sm opacity-90">Comprehensive job board with advanced matching algorithms and real-time chat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Job Board Platform</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Full-featured job board connecting employers and candidates with intelligent matching, real-time messaging, and comprehensive analytics.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">React</span>
+                            <span class="px-2 py-1 bg-secondary/20 text-secondary rounded text-xs">Express</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent rounded text-xs">MongoDB</span>
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Socket.io</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-muted text-xs">Web Application</span>
+                            <button class="text-accent hover:text-accent-400 text-sm font-medium transition-colors duration-200" onclick="openProjectModal('jobboard')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Internship Projects -->
+                <div class="project-card glass-card rounded-2xl overflow-hidden hover:shadow-glow-lg transition-all duration-500 hover:scale-105 section-reveal animation-delay-600" data-category="web-app">
+                    <div class="relative h-48 overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CodSoft Internship Projects" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white w-full">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="text-sm text-accent font-medium">Internship Portfolio</span>
+                                    <div class="flex space-x-2">
+                                        <button class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200" onclick="openProjectModal('internship')">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-sm opacity-90">Collection of projects developed during CodSoft internship program</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">CodSoft Internship Projects</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Comprehensive collection of web applications developed during my internship at CodSoft, showcasing diverse technical skills and project management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">HTML/CSS</span>
+                            <span class="px-2 py-1 bg-secondary/20 text-secondary rounded text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent rounded text-xs">Bootstrap</span>
+                            <span class="px-2 py-1 bg-primary/20 text-primary rounded text-xs">jQuery</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-muted text-xs">Learning Portfolio</span>
+                            <button class="text-accent hover:text-accent-400 text-sm font-medium transition-colors duration-200" onclick="openProjectModal('internship')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-background/80 backdrop-blur-md z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="glass-card rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="modalContent">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-surface/50 border-t border-glass-border mt-20">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">VR</span>
+                        </div>
+                        <span class="font-bold text-lg gradient-text">Visvajeet Raj</span>
+                    </div>
+                    <p class="text-text-secondary">
+                        Full Stack AI Developer passionate about creating innovative solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="portfolio_homepage.html#about" class="block text-text-secondary hover:text-primary transition-colors duration-300">About</a>
+                        <a href="portfolio_homepage.html#projects" class="block text-text-secondary hover:text-primary transition-colors duration-300">Projects</a>
+                        <a href="portfolio_homepage.html#skills" class="block text-text-secondary hover:text-primary transition-colors duration-300">Skills</a>
+                        <a href="contact_inquiry.html" class="block text-text-secondary hover:text-primary transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="space-y-2">
+                        <a href="mailto:visvajeetraj@gmail.com" class="block text-text-secondary hover:text-primary transition-colors duration-300">visvajeetraj@gmail.com</a>
+                        <a href="tel:+918610006514" class="block text-text-secondary hover:text-primary transition-colors duration-300">+91 8610006514</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-glass-border pt-8 text-center">
+                <p class="text-text-secondary">
+                     2025 Visvajeet Raj. Lets Grow Together.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <a href="contact_inquiry.html" class="floating-action">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Project data for modal content
+        const projectData = {
+            ecopellet: {
+                title: "EcoPellet - Sustainable Energy Platform",
+                category: "Sustainable Energy",
+                description: "A comprehensive platform for sustainable energy management featuring real-time monitoring, predictive analytics, and automated reporting systems. Built with modern web technologies and AI integration.",
+                features: [
+                    "Real-time energy consumption monitoring",
+                    "AI-powered predictive analytics",
+                    "Automated reporting and alerts",
+                    "Interactive dashboard with data visualization",
+                    "Mobile-responsive design",
+                    "Integration with IoT sensors"
+                ],
+                technologies: ["React", "Node.js", "MongoDB", "AI/ML", "Chart.js", "Socket.io"],
+                challenges: "Implementing real-time data processing and creating intuitive visualizations for complex energy data.",
+                solution: "Developed a scalable architecture using WebSocket connections for real-time updates and implemented machine learning algorithms for predictive analytics.",
+                image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            fiberx: {
+                title: "FiberX - Regenerating Cloth",
+                category: "Fabrication",
+                description: "Advanced fiber optic network management system with intelligent routing, performance monitoring, and predictive maintenance capabilities for enterprise-level network infrastructure.",
+                features: [
+                    "Regenerating torn fiber",
+                    "Real-time performance monitoring",
+                    "Predictive maintenance alerts",
+                    "Optimized usage",
+                    "Automated tear detection",
+                    "Comprehensive usage"
+                ],
+                technologies: ["Chemistry", "Ethanol", "Equation Balancing", "AI/ML"],
+                challenges: "Daily usable cloths are prone to damages that leads to frequently change the cloths.",
+                solution: "Created a fabric that has the ability to re grow with help of regenerating spray.",
+                image: "https://images.pixabay.com/photo/2020/06/24/19/12/cabbage-5337431_1280.jpg"
+            },
+            milktracker: {
+                title: "Mother's Milk Tracker",
+                category: "Healthcare ",
+                description: "Intelligent Feeding dress for infrant breast feeding.",
+                features: [
+                    "Breastfeeding session tracking",
+                    "Smart notification system",
+                    "ML-powered pattern analysis",
+                    "Growth milestone tracking",
+                    "Pediatrician consultation integration",
+                    "Data export and sharing"
+                ],
+                technologies: ["React Native", "Firebase", "ML Kit", "Healthcare APIs", "Push Notifications"],
+                challenges: "Creating an intuitive interface for sleep-deprived new mothers while ensuring data privacy and accuracy.",
+                solution: "Implemented voice-activated logging, simplified UI/UX design, and robust data encryption for privacy protection.",
+                image: "https://images.pexels.com/photos/1257110/pexels-photo-1257110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            },
+            furniture: {
+                title: "Furniture E-commerce Platform",
+                category: "E-commerce Platform",
+                description: "Complete e-commerce solution for furniture retail with AR product visualization, intelligent search, and personalized recommendations for enhanced shopping experience.",
+                features: [
+                    "AR product visualization",
+                    "Intelligent search and filtering",
+                    "Personalized recommendations",
+                    "Secure payment processing",
+                    "Inventory management system",
+                    "Customer review and rating system"
+                ],
+                technologies: ["Next.js", "Stripe", "MySQL", "AR/VR", "Elasticsearch", "AWS"],
+                challenges: "Implementing AR visualization for furniture placement and managing large product catalogs with complex filtering.",
+                solution: "Integrated WebAR technology for product visualization and implemented advanced search algorithms with Elasticsearch for fast, accurate results.",
+                image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            jobboard: {
+                title: "Job Board Platform",
+                category: "Job Platform",
+                description: "Full-featured job board connecting employers and candidates with intelligent matching, real-time messaging, and comprehensive analytics for effective recruitment.",
+                features: [
+                    "Intelligent job-candidate matching",
+                    "Real-time messaging system",
+                    "Advanced search and filtering",
+                    "Application tracking system",
+                    "Analytics and reporting",
+                    "Multi-role user management"
+                ],
+                technologies: ["React", "Express", "MongoDB", "Socket.io", "JWT", "Nodemailer"],
+                challenges: "Creating an effective matching algorithm and implementing real-time communication between multiple user types.",
+                solution: "Developed a sophisticated matching algorithm using machine learning and implemented WebSocket-based real-time messaging with role-based access control.",
+                image: "https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg"
+            },
+            internship: {
+                title: "CodSoft Internship Projects",
+                category: "Internship Portfolio",
+                description: "Comprehensive collection of web applications developed during my internship at CodSoft, showcasing diverse technical skills and project management capabilities.",
+                features: [
+                    "Landing page designs",
+                    "Portfolio websites",
+                    "Calculator applications",
+                    "To-do list applications",
+                    "Responsive web designs",
+                    "Interactive user interfaces"
+                ],
+                technologies: ["HTML/CSS", "JavaScript", "Bootstrap", "jQuery", "SASS", "Git"],
+                challenges: "Learning multiple technologies quickly and delivering projects within tight deadlines while maintaining code quality.",
+                solution: "Adopted agile development practices, created reusable component libraries, and implemented systematic testing procedures for consistent quality.",
+                image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+        };
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        const categories = card.getAttribute('data-category').split(' ');
+                        if (categories.includes(filter)) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('modalContent');
+            const project = projectData[projectId];
+
+            if (!project) return;
+
+            modalContent.innerHTML = `
+                <div class="relative">
+                    <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-10 p-2 bg-surface/80 rounded-lg hover:bg-surface transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    
+                    <div class="h-64 md:h-80 overflow-hidden rounded-t-2xl">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">${project.category}</span>
+                            <div class="flex space-x-2">
+                                <a href="#" class="p-2 bg-primary/20 rounded-lg hover:bg-primary/30 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-1a1 1 0 10-2 0v1H5V7h1a1 1 0 000-2H5z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/30 transition-colors duration-200">
+                                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <h2 class="text-3xl font-bold mb-4 gradient-text">${project.title}</h2>
+                        <p class="text-text-secondary mb-6 leading-relaxed">${project.description}</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4 text-primary">Key Features</h3>
+                                <ul class="space-y-2">
+                                    ${project.features.map(feature => `
+                                        <li class="flex items-start space-x-2">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="text-text-secondary">${feature}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4 text-secondary">Technologies Used</h3>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    ${project.technologies.map(tech => `
+                                        <span class="px-3 py-1 bg-surface rounded-full text-sm">${tech}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3 text-accent">Challenge</h3>
+                                <p class="text-text-secondary leading-relaxed">${project.challenges}</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3 text-primary">Solution</h3>
+                                <p class="text-text-secondary leading-relaxed">${project.solution}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('projectModal').addEventListener('click', (e) => {
+            if (e.target.id === 'projectModal') {
+                closeProjectModal();
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Section reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        let isDark = true;
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            themeToggle.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                themeToggle.style.transform = 'scale(1)';
+            }, 150);
+        });
+
+        // Filter button styling
+        const style = document.createElement('style');
+        style.textContent = `
+            .filter-btn {
+                @apply px-4 py-2 rounded-lg bg-surface hover:bg-surface-light text-text-secondary hover:text-text-primary transition-all duration-300 flex items-center font-medium;
+            }
+            .filter-btn.active {
+                @apply bg-primary text-white shadow-glow;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
